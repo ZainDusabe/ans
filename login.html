@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Hanga konti</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+			</div>
+			<!-- <span>Koresha email wiyandikisha</span> -->
+			<input type="text" placeholder="Izina ribanza" />
+			<input type="text" placeholder="Irindi zina" />
+			<input type="text" placeholder="wilaya" />
+			<input type="text" placeholder="urugo" />
+			<input type="text" placeholder="email" />
+			<input type="text" placeholder="numeroya telefone" />
+			<input type="password" placeholder="Password" />
+			<button>Iyandikishe</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<!-- <p id="mesaje"></p> -->
+		<form action="" name="loginform" method="post" onsubmit="credentials()">
+			<h1>Injira</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+			</div>
+			<!-- <div id="mesaje" backgroundcolor="red"></div> -->
+			<input type="email" id="email" placeholder="email cyangwa telefone"  required/>
+			<input type="password"  id="pwd" placeholder="ijambo banga" required />
+			<a href="#">Wibagiwe ijambo banga?</a>
+			<button value="Submit">Injira</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Urakoze kugaruka</h1>
+				<p>Injira ukoresheje amakuru yawe wakoresheje wiyandikisha</p>
+				<button class="ghost" id="signIn">Injira</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Muraho</h1>
+				<p>Bana natwe muriyi sisteme ufungura konti yawe bwite</p>
+				<button class="ghost" id="signUp">Iyandikishe</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+
+</footer>
+<script src="login.js"></script>
+</body>
+</html>

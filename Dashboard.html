@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+    <div class="grid-container">  
+        <!-- HEADER -->
+        <header class="header"> 
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span id="name"></span>
+                <span class="material-icons-outlined">notification_important</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+
+        <!-- SIDEBAR  -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <p id="nam">Ansar-Allah</p>
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">dashboard</span> Profile
+                </li>
+                <!-- <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">invetory</span> Product
+                </li> -->
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">fact_check</span> Abadai
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">add_shopping_cart</span> Abayobozi
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">shopping_cart</span> Ifanq
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">poll</span> Reports
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">settings</span> Settings
+                </li>
+            </ul>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-container">
+            <div class="main-title">
+                <p  id="name" class="font-weight-bold">Dashboard</p>
+            </div>
+            <div class="main-card">
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Adhkar</p>
+                        <span class="material-icons-outlined text-blue">book</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">240</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Books</p>
+                        <!-- <span class="material-icons-outlined text-orange">add_shopping_cart</span> -->
+                        <span class="material-icons-outlined text-blue">book</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">83</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Hadith</p>
+                        <!-- <span class="material-icons-outlined text-green">shopping_cart</span> -->
+                        <span class="material-icons-outlined text-blue">book</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">79</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Sila</p>
+                        <!-- <span class="material-icons-outlined text-red">notification_important</span> -->
+                        <span class="material-icons-outlined text-blue">book</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">56</span>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
